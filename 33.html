@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicita tu Préstamo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Solicita tu Préstamo</h1>
+    <div style="text-align: center; margin-bottom: 20px;">
+      <p style="font-size: 15px; font-weight: bold;">¡Préstamos en Línea en Minutos!</p>
+      <p style="font-size: 10px;">DineroAlInstante te conecta con las mejores ofertas de préstamos personales online.</p>
+      <p style="font-size: 10px;">
+        <span style="display: flex; align-items: center; justify-content: center;">
+          <img src="image.png" alt="Icono de verificación" style="width: 16px; height: 16px; margin-right: 5px;">
+          96% de solicitudes aprobadas
+        </span>
+      </p>
+      <p style="font-size: 10px;">
+        <span style="display: flex; align-items: center; justify-content: center;">
+          <img src="image.png" alt="Icono de verificación" style="width: 16px; height: 16px; margin-right: 5px;">
+          100% online, disponible 24/7
+        </span>
+      </p>
+      <p style="font-size: 10px;">
+        <span style="display: flex; align-items: center; justify-content: center;">
+          <img src="image.png" alt="Icono de verificación" style="width: 16px; height: 16px; margin-right: 5px;">
+          Recibe respuestas en minutos
+        </span>
+      </p>
+    </div>
+    <form id="loanForm">
+      <div class="form-group">
+        <label for="fullName">Nombre completo</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="idNumber">Número de identificación</label>
+        <input type="text" id="idNumber" name="idNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Número de celular</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Gmail</label>
+        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" required>
+      </div>
+      <div class="form-group">
+        <label for="birthDate">Fecha de nacimiento</label>
+        <input type="date" id="birthDate" name="birthDate" required>
+      </div>
+      <div id="errorMessage" class="error-message"></div>
+      <button type="submit">Registrar y Continuar</button>
+      <div style="margin-top: 10px;"><button type="button" id="termsButton">Términos y Condiciones</button></div>
+    </form>
+  </div>
+
+  <!-- Modal de Términos y Condiciones -->
+  <div id="termsModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <p>Términos y Condiciones de Uso del Sitio Web de Préstamos</p>
+      <p>Al acceder y utilizar este sitio web, usted acepta cumplir con los siguientes términos y condiciones. Si no está de acuerdo con alguno de estos términos, le instamos a que se abstenga de utilizar nuestros servicios.</p>
+      <p><strong>Aceptación de Términos:</strong> Al utilizar este sitio, usted se compromete a respetar todas las leyes y regulaciones aplicables. Su falta de cumplimiento puede resultar en la suspensión o cancelación inmediata de su acceso a nuestros servicios.</p>
+      <p><strong>Información Veraz:</strong> Es su responsabilidad proporcionar información veraz y completa en todas las solicitudes de préstamo. Cualquier intento de fraude o falsificación de información será tomado muy en serio y podrá conllevar acciones legales.</p>
+      <p><strong>Obligaciones de pago:</strong> Al aceptar un préstamo, usted se compromete a cumplir con las condiciones de pago acordadas. La falta de pago puede resultar en consecuencias graves, incluyendo, pero no limitándose a, acciones legales, informes a agencias de crédito y la posibilidad de incurrir en cargos adicionales.</p>
+      <p><strong>Modificaciones de Términos:</strong> Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Cualquier cambio entrará en vigencia inmediatamente al ser publicado en este sitio. Su uso continuado del sitio después de cualquier modificación constituirá su aceptación de los nuevos términos.</p>
+      <p><strong>Limitación de Responsabilidad:</strong> No seremos responsables por daños indirectos, incidentales o consecuentes que resulten del uso o la imposibilidad de uso de este sitio o de los servicios ofrecidos.</p>
+      <p><strong>Jurisdicción:</strong> Estos términos se regirán e interpretarán de acuerdo con las leyes del país en el que operamos. Cualquier disputa que surja en relación con estos términos se someterá a la jurisdicción exclusiva de los tribunales competentes.</p>
+      <p>Por favor, lea atentamente estos términos y condiciones. Su uso de este sitio implica que ha leído, entendido y aceptado cumplir con ellos. No subestime la seriedad de sus obligaciones; el incumplimiento puede tener repercusiones significativas en su situación financiera y legal.</p>
+      <p><strong>Última actualización:</strong> [04/05/2012]</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
